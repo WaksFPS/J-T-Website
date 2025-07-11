@@ -48,9 +48,7 @@
         <!-- Logo Section -->
         <div class="flex items-center">
           <div class="flex-shrink-0 flex items-center">
-            <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center mr-3">
-              <i class="fas fa-calculator text-primary text-lg"></i>
-            </div>
+            <img src="src/assets/jtlogo.png" alt="J&T Bookkeeping Logo" class="w-16 h-16 rounded-full mr-3" />
             <span class="text-accent font-bold text-xl">J&T Bookkeeping</span>
           </div>
         </div>
@@ -88,8 +86,20 @@
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="hero-gradient min-h-screen flex items-center pt-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+  <section
+    id="home"
+    class="relative min-h-screen flex items-center pt-16 overflow-hidden"
+  >
+    <!-- Blurred background image -->
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('src/assets/jtbg.png'); filter: blur(20px);"
+      aria-hidden="true"
+    ></div>
+    <!-- Optional: dark overlay for readability -->
+    <div class="absolute inset-0 bg-black/60"></div>
+    <!-- Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
       <div class="text-center">
         <h1 class="text-4xl md:text-6xl font-bold text-accent mb-6">
           Your Trusted Partner in <span class="text-secondary">Bookkeeping</span> & Business Support
@@ -346,28 +356,28 @@
                 <i class="fas fa-map-marker-alt text-secondary text-xl mr-4"></i>
                 <div>
                   <h4 class="font-semibold">Address</h4>
-                  <p>Angeles City, Pampanga, Philippines</p>
+                  <p>San Jose, Angeles City, Pampanga, Philippines</p>
                 </div>
               </div>
               <div class="flex items-center">
                 <i class="fas fa-phone text-secondary text-xl mr-4"></i>
                 <div>
                   <h4 class="font-semibold">Phone</h4>
-                  <p>Message us for contact details</p>
+                  <p>+63 961 565 0020 / +63 919 294 7384</p>
                 </div>
               </div>
               <div class="flex items-center">
                 <i class="fas fa-envelope text-secondary text-xl mr-4"></i>
                 <div>
                   <h4 class="font-semibold">Email</h4>
-                  <p>Message us for email contact</p>
+                  <p>jnt.books.ph@gmail.com</p>
                 </div>
               </div>
               <div class="flex items-center">
                 <i class="fas fa-clock text-secondary text-xl mr-4"></i>
                 <div>
                   <h4 class="font-semibold">Business Hours</h4>
-                  <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                  <p>Monday - Friday: 8:30 AM - 5:00 PM</p>
                 </div>
               </div>
             </div>
@@ -375,15 +385,13 @@
             <!-- Google Map -->
             <div>
               <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61939.36!2d120.5359!3d15.1455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f24b7b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sAngeles%2C%20Pampanga%2C%20Philippines!5e0!3m2!1sen!2sph!4v1234567890123"
-                  width="100%" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10893.887753080144!2d120.58169687637395!3d15.12695715449326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f249ba285f4b%3A0xca15793645f06597!2sSan%20Jose%2C%20Angeles%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1752239578432!5m2!1sen!2sph"        
                   height="250" 
                   style="border:0;" 
                   allowfullscreen="" 
                   loading="lazy" 
                   referrerpolicy="no-referrer-when-downgrade"
-                  title="Angeles City, Pampanga Location">
+                  title="San Jose, Angeles City, Pampanga Location">
                 </iframe>
               </div>
             </div>
@@ -394,10 +402,7 @@
             <p class="text-accent mb-4">Serving clients across:</p>
             <div class="flex flex-wrap justify-center gap-2">
               <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Pampanga</span>
-              <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Tarlac</span>
-              <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Nueva Ecija</span>
-              <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Bulacan</span>
-              <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Zambales</span>
+              <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">and nearby provinces</span>
             </div>
           </div>
           
@@ -417,9 +422,7 @@
       <div class="grid md:grid-cols-4 gap-8">
         <div class="md:col-span-2">
           <div class="flex items-center mb-4">
-            <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center mr-3">
-              <i class="fas fa-calculator text-primary text-lg"></i>
-            </div>
+            <img src="src/assets/jtlogo.png" alt="J&T Bookkeeping Logo" class="w-16 h-16 rounded-full mr-3" />
             <span class="text-accent font-bold text-xl">J&T Bookkeeping</span>
           </div>
           <p class="text-gray-300 mb-4">
@@ -427,15 +430,15 @@
             with professional accounting services.
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="text-secondary hover:text-yellow-300 transition-colors">
-              <i class="fab fa-facebook text-xl"></i>
+            <a href="https://www.facebook.com/JnTBookkeeping/" class="text-secondary hover:text-yellow-300 transition-colors">
+              <i class="fab fa-facebook text-xl"> F a c e b o o k</i>
             </a>
-            <a href="#" class="text-secondary hover:text-yellow-300 transition-colors">
+            <!-- <a href="#" class="text-secondary hover:text-yellow-300 transition-colors">
               <i class="fab fa-linkedin text-xl"></i>
-            </a>
-            <a href="#" class="text-secondary hover:text-yellow-300 transition-colors">
+            </a> -->
+            <!-- <a href="#" class="text-secondary hover:text-yellow-300 transition-colors">
               <i class="fab fa-twitter text-xl"></i>
-            </a>
+            </a> -->
           </div>
         </div>
         
